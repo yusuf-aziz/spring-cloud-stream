@@ -8,7 +8,7 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.javatechie</groupId>
+	<groupId>com.javaeg</groupId>
 	<artifactId>spring-cloud-stream-publisher</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-cloud-stream-publisher</name>

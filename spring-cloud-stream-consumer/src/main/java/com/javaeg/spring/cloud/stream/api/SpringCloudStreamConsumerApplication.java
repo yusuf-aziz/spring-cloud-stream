@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class SpringCloudStreamConsumerApplication {
 
-	@StreamListener("inbound")
+	@StreamListener("input")
 	public void consumeMessage(Product product) {
 		log.info("Consumer product :" + product);
 	}

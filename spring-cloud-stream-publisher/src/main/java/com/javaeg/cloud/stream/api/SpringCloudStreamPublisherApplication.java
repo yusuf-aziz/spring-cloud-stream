@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringCloudStreamPublisherApplication {
 	@Autowired
-	private MessageChannel outbound;
+	private MessageChannel output;
 
 	@PostMapping("/publish")
 	public Product publishEvent(@RequestBody Product product) {
-		outbound.send(MessageBuilder.withPayload(product).build());
+		output.send(MessageBuilder.withPayload(product).build());
 		return product;
 	}
 

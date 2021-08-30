@@ -4,5 +4,16 @@ spring:
   cloud:
     stream:
       bindings:
-        outbound:
+        output:
           destination: javaeg-stream
+      binders:
+        local_rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: <host>
+                port: <port>
+                username: <user>
+                password: <password>
+                virtual-host: /

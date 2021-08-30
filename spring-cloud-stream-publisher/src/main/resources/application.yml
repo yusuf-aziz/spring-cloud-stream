@@ -1,0 +1,8 @@
+server:
+  port: 9091
+spring:
+  cloud:
+    stream:
+      bindings:
+        outbound:
+          destination: javaeg-stream

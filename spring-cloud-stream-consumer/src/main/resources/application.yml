@@ -2,5 +2,16 @@ spring:
   cloud:
     stream:
       bindings:
-        inbound:
+        input:
           destination: javaeg-stream
+      binders:
+        local_rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: <host>
+                port: <port>
+                username: <username>
+                password: <password>
+                virtual-host: /
